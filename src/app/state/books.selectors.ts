@@ -12,5 +12,5 @@ export const selectBookCollection = createSelector(
     selectBooks,
     selectCollectionState,
     (books, collection) =>
-        collection.map(id => books.find(book => book.id === id)),
+        collection.map(id => books.find(book => book.id === id) as Book),
 );

@@ -17,7 +17,11 @@ import { BookCollectionComponent } from './book-collection/book-collection.compo
   ],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({ books: booksReducer, collection: collectionReducer }),
+    StoreModule.forRoot({
+      /* selector: reducer */
+      books: booksReducer,
+      collection: collectionReducer
+    }),
     HttpClientModule,
   ],
   providers: [],
